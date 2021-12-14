@@ -25,9 +25,12 @@ const Login = () => {
                   placeholder="Phone Number, UserName, or Email"
                 />
                 <input type="password" placeholder="Password" />
-                <button className="form-btn" type="submit">
-                  Log in
-            </button> <br></br>
+                <a><Link to="/home">
+                  <button className="form-btn" type="submit">
+                    Log In
+                </button>
+                </Link></a>
+                <br></br>
                 <div className='orclass'>
                   <hr></hr> <span className="has-separator">Or</span> <hr></hr>
                 </div>

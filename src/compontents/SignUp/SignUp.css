@@ -28,7 +28,7 @@ body {
 .img1{
   display: inline-block;
   height: 51px;
-  width: 100%;
+  width: 50%;
   margin: 2% 0px 2% 0px;
 }
 
@@ -75,6 +75,11 @@ body {
 }
 
 
+.form-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .para{
   font-size: 12px;
   font-weight: normal;
@@ -115,7 +120,7 @@ body {
 
 .img2 , .img3{
   display: inline-block;
-  width: 50%;
+  width: 40%;
   height: 40px;
   margin-left: 2%;
 }

@@ -38,9 +38,11 @@ const SignUp = () => {
                   placeholder="Username"
                 />
                 <input type="password" placeholder="Password" />
+                <a><Link to="/">
                 <button className="form-btn" type="submit">
-                  Sign up
-            </button>
+                  Sign up 
+                </button>
+                </Link></a>
                 <p className='para'>By signing up, you agree to our Terms, Data Policy and Cookie Policy.</p>
               </form>
             </div>

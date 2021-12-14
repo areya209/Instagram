@@ -35,7 +35,7 @@ body {
 .img1{
   display: inline-block;
   height: 51px;
-  width: 70%;
+  width: 50%;
   margin: 8% 0px;
 }
 
@@ -56,6 +56,12 @@ body {
   border-radius:5px;
   cursor: pointer;
   margin-bottom: 6%;
+}
+
+
+.form-btn a {
+  color: #fff;
+    text-decoration: none;
 }
 
 .has-separator {
