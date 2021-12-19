@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import "./Home.css";
 import Avatar from "@material-ui/core/Avatar";
+import axios from "axios";
 
 function Post() {
-    // let loading = false;
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-        .then(res => res.json())
-        .then(
-            (result) => {
-                console.log(result)
-            },
-
-            (error) => {
-                this.setState({
-                    isLoaded: true,
-                    error
-                })
-            }
-        )
 
 
+    const [post, setpost] = useState([]);
 
+    useEffect(() => {
+
+        // IDuser()
+        IDpost()
+    }, []);
+
+    const IDpost = async () => {
+        const { data } = await axios.get(`http://127.0.0.1:8000/instgram/postid/1`)
+
+        console.log(data)
+        setpost(data)
+
+
+    }
+  
     return (
         <>
             <Container fluid>
@@ -41,7 +43,7 @@ function Post() {
                             <div className="post_like" >
 
                             </div>
-                            <h2 className="post_text"> <strong> username: </strong> caption</h2>
+                            <h2 className="post_text"> <strong> username: </strong> {post.image_caption}</h2>
                             <form >
                                 <input
                                     className="post_input"
@@ -68,5 +70,4 @@ function Post() {
     )
 }
 
-export default Post
-
+export default Post;
